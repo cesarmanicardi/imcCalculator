@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <main>
+        <section id="front-part">
+            <h2>IMC Calculator</h2>
+            <form>
+                <div class="user-data">
+                    <div class="form-inputs">
+                        <label for="height">How tall are you?</label>
+                        <input id="height" type="text" name="height" placeholder="Ex: 1,75" required>
+                    </div>
+                    <div class="form-inputs">
+                        <label for="weight">What's your weight?</label>
+                        <input id="weight" type="text"name="weight" placeholder="Ex: 70" required>
+                    </div>
+                </div>
+                <div class="form-buttons">
+                    <button id="btn-calculate">Calculate</button>
+                    <button id="btn-clear">Clear</button>
+                </div>
+            </form>
+        </section>
+        <section id="results-container"  class="hide">
+            <p id="imc-result">Your IMC is: <span></span></p>
+            <p id="imc-info">Actual Situation: <span></span></p>
+            <h3>Check the classifications</h3>
+            <div id="imc-table">
+                <div class="imc-classification">
+                    <h4>IMC</h4>
+                    <h4>Classification</h4>
+                    <h4>Obesity</h4>
+                </div>
+            </div>
+            <button class="btn-back">Back</button>
+        </section>
+    </main>
+
+ <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+</body>
+
+</html>
